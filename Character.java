@@ -47,33 +47,48 @@ public abstract class Character
     }
     
     /**
-     * test
+     * @return      current health points of character
      */
     public int getHp()
     {
         return stat_hp;
     }
     
+    /**
+     * @return      current mana points of character
+     */
     public int getMp()
     {
         return stat_mp;
     }
     
+    /**
+     * @return      amount of strength character has
+     */
     public int getStr()
     {
         return stat_str;
     }
     
+    /**
+     * @return      amount of vitality character has
+     */
     public int getVit()
     {
         return stat_vit;
     }
     
+    /**
+     * @return      amount of intelligence character has
+     */
     public int getInt()
     {
         return stat_int;
     }
     
+    /**
+     * @return      amount of dexterity character has
+     */
     public int getDex()
     {
         return stat_dex;
