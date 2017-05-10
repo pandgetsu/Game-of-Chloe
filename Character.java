@@ -93,6 +93,11 @@ public abstract class Character
     {
         return stat_dex;
     }
+    
+    public String getName()
+    {
+        return name;
+    }
     /**
      * Here is the main() method
      * 
