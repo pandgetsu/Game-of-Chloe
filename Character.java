@@ -29,9 +29,9 @@ public abstract class Character
      * @param health        the current amount of health the character has at the given time
      * @param mana          the current amount of mana the character has at the given time
      * @param strength      the amount of strength the character has which translates to physical damage
-     * @param vitality      the amount of vitality a character has which translates to their maximum health
-     * @param intelligence  the amount of intelligence a character has which translates to their maximum mana and magic damage
-     * @param dexterity     the amount of dexterity a character has which translates to critical chance
+     * @param vitality      the amount of vitality the character has which translates to their maximum health
+     * @param intelligence  the amount of intelligence the character has which translates to their maximum mana and magic damage
+     * @param dexterity     the amount of dexterity the character has which translates to critical chance
      * 
      */
     public Character(int health, int mana, int strength, int vitality, int intelligence, int dexterity, String chloe)
@@ -47,33 +47,48 @@ public abstract class Character
     }
     
     /**
-     * 
+     * @return      current health points of the character
      */
     public int getHp()
     {
         return stat_hp;
     }
     
+    /**
+     * @return      current mana points of the character
+     */
     public int getMp()
     {
         return stat_mp;
     }
     
+    /**
+     * @return      amount of strength the character has
+     */
     public int getStr()
     {
         return stat_str;
     }
     
+    /**
+     * @return      amount of vitality the character has
+     */
     public int getVit()
     {
         return stat_vit;
     }
     
+    /**
+     * @return      amount of intelligence the character has
+     */
     public int getInt()
     {
         return stat_int;
     }
     
+    /**
+     * @return      amount of dexterity the character has
+     */
     public int getDex()
     {
         return stat_dex;
