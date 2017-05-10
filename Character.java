@@ -47,7 +47,7 @@ public abstract class Character
     }
     
     /**
-     * 
+     * test
      */
     public int getHp()
     {
