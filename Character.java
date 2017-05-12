@@ -46,9 +46,20 @@ public abstract class Character
     }
     
     /**
+    *   Adds the amount of experience earned to the character's experience
+    *   
+    *   @param expGained     the amount of exp earned
+    */
+    public void earnExp(int expEarned)
+    {
+        exp += expEarned;
+        checkExp();
+    }
+    
+    /**
     *   Checks if the character has earned enough experience to reach the next level
     */
-    public void nextLevel()
+    private void checkExp()
     {
         if (exp >= expCap)
             levelUp();
