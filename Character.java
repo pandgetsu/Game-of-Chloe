@@ -74,6 +74,14 @@ public abstract class Character
     }
     
     /**
+    *   @return     name of the character
+    */
+    public String getName()
+    {
+        return name;
+    }
+    
+    /**
      *  @return      current level of the character
      */
     public int getLevel()
@@ -143,13 +151,5 @@ public abstract class Character
     public int getDex()
     {
         return stat_dex;
-    }
-    
-    /**
-    *   @return     name of the character
-    */
-    public String getName()
-    {
-        return name;
     }
 }
