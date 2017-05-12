@@ -7,6 +7,7 @@
  */
 public abstract class Character
 {
+    protected int level;        //Level
     protected int stat_hp;      //Health points
     protected int stat_mp;      //Mana points
     protected int stat_str;     //Strength
@@ -36,6 +37,7 @@ public abstract class Character
      */
     public Character(int health, int mana, int strength, int vitality, int intelligence, int dexterity, String chloe)
     {
+        level = 1;
         stat_hp = health;
         stat_mp = mana;
         stat_str = strength;
@@ -44,6 +46,14 @@ public abstract class Character
         stat_dex = dexterity;
         name = chloe;
         
+    }
+    
+    /**
+     * @return      current level of the character
+     */
+    public int getLevel()
+    {
+        return level;
     }
     
     /**
