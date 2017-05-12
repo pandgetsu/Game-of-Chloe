@@ -23,6 +23,7 @@ public abstract class Character
      *  Experience starts at 0
      *  Experience Cap starts at 1000
      *  
+     *  @param chloe         the name of the character
      *  @param health        the current amount of health the character has at the given time
      *  @param mana          the current amount of mana the character has at the given time
      *  @param strength      the amount of strength the character has which translates to physical damage
@@ -30,8 +31,9 @@ public abstract class Character
      *  @param intelligence  the amount of intelligence the character has which translates to their maximum mana and magic damage
      *  @param dexterity     the amount of dexterity the character has which translates to critical chance
      */
-    public Character(int health, int mana, int strength, int vitality, int intelligence, int dexterity, String chloe)
+    public Character(String chloe, int health, int mana, int strength, int vitality, int intelligence, int dexterity)
     {
+        name = chloe;
         level = 1;
         exp = 0;
         expCap = 1000;
@@ -41,7 +43,6 @@ public abstract class Character
         stat_vit = vitality;
         stat_int = intelligence;
         stat_dex = dexterity;
-        name = chloe;
     }
     
     /**
