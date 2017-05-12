@@ -90,6 +90,14 @@ public abstract class Character
     }
     
     /**
+     *  @return      current experience cap of the character
+     */
+    public int getExpCap()
+    {
+        return expCap;
+    }
+    
+    /**
      *  @return      current health points of the character
      */
     public int getHp()
