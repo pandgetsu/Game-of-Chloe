@@ -18,18 +18,18 @@ public abstract class Character
     protected int stat_dex;     // Dexterity
     
     /**
-     *  Constructs a character object with all stats for general character
-     *  Level starts at 1
-     *  Experience starts at 0
-     *  Experience Cap starts at 1000
-     *  
-     *  @param chloe         the name of the character
-     *  @param health        the current amount of health the character has at the given time
-     *  @param mana          the current amount of mana the character has at the given time
-     *  @param strength      the amount of strength the character has which translates to physical damage
-     *  @param vitality      the amount of vitality the character has which translates to their maximum health
-     *  @param intelligence  the amount of intelligence the character has which translates to their maximum mana and magic damage
-     *  @param dexterity     the amount of dexterity the character has which translates to critical chance
+     * Constructs a character object with all stats for general character
+     * Level starts at 1
+     * Experience starts at 0
+     * Experience Cap starts at 1000
+     * 
+     * @param chloe         the name of the character
+     * @param health        the current amount of health the character has at the given time
+     * @param mana          the current amount of mana the character has at the given time
+     * @param strength      the amount of strength the character has which translates to physical damage
+     * @param vitality      the amount of vitality the character has which translates to their maximum health
+     * @param intelligence  the amount of intelligence the character has which translates to their maximum mana and magic damage
+     * @param dexterity     the amount of dexterity the character has which translates to critical chance
      */
     public Character(String chloe, int health, int mana, int strength, int vitality, int intelligence, int dexterity)
     {
@@ -46,10 +46,10 @@ public abstract class Character
     }
     
     /**
-    *   Adds the amount of experience earned to the character's experience
-    *   
-    *   @param expGained     the amount of exp earned
-    */
+     * Adds the amount of experience earned to the character's experience
+     *   
+     * @param expGained     the amount of exp earned
+     */
     public void earnExp(int expEarned)
     {
         exp += expEarned;
@@ -57,8 +57,8 @@ public abstract class Character
     }
     
     /**
-    *   Checks if the character has earned enough experience to reach the next level
-    */
+     * Checks if the character has earned enough experience to reach the next level
+     */
     private void checkExp()
     {
         if (exp >= expCap)
@@ -66,10 +66,10 @@ public abstract class Character
     }
     
     /**
-    *   If the experience cap is reached, the experience cap for the level is subtracted
-    *   from the current experience of the character
-    *   The level of the character increases by one
-    */
+     * If the experience cap is reached, the experience cap for the level is subtracted
+     * from the current experience of the character
+     * The level of the character increases by one
+     */
     private void levelUp()
     {
         exp -= expCap;
@@ -78,23 +78,23 @@ public abstract class Character
     }
     
     /**
-    *   Sets the experience cap for the current level
-    */
+     * Sets the experience cap for the current level
+     */
     private void setExpCap()
     {
         expCap += (100 * Math.pow(2, level - 1));
     }
     
     /**
-    *   @return     name of the character
-    */
+     * @return      name of the character
+     */
     public String getName()
     {
         return name;
     }
     
     /**
-     *  @return      current level of the character
+     * @return      current level of the character
      */
     public int getLevel()
     {
@@ -102,7 +102,7 @@ public abstract class Character
     }
     
     /**
-     *  @return      current amount of experience the character has
+     * @return      current amount of experience the character has
      */
     public int getExp()
     {
@@ -110,7 +110,7 @@ public abstract class Character
     }
     
     /**
-     *  @return      current experience cap of the character
+     * @return      current experience cap of the character
      */
     public int getExpCap()
     {
@@ -118,7 +118,7 @@ public abstract class Character
     }
     
     /**
-     *  @return      current health points of the character
+     * @return      current health points of the character
      */
     public int getHp()
     {
@@ -126,7 +126,7 @@ public abstract class Character
     }
     
     /**
-     *  @return      current mana points of the character
+     * @return      current mana points of the character
      */
     public int getMp()
     {
@@ -142,7 +142,7 @@ public abstract class Character
     }
     
     /**
-     *  @return      amount of vitality the character has
+     * @return      amount of vitality the character has
      */
     public int getVit()
     {
@@ -150,7 +150,7 @@ public abstract class Character
     }
     
     /**
-     *  @return      amount of intelligence the character has
+     * @return      amount of intelligence the character has
      */
     public int getInt()
     {
@@ -158,10 +158,26 @@ public abstract class Character
     }
     
     /**
-     *  @return      amount of dexterity the character has
+     * @return      amount of dexterity the character has
      */
     public int getDex()
     {
         return stat_dex;
+    }
+    
+    /**
+     * @return      amount of physical damage this character deals
+     */
+    public int getPhysicalDamage()
+    {
+        return getStr() * 1.5;
+    }
+    
+    /**
+     * @return      amount of physical damage this character deals
+     */
+    public int getMagicalDamage()
+    {
+        return getInt() * 1.5;
     }
 }
