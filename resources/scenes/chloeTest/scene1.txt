@@ -1,0 +1,5 @@
+resources/images/batman.png
+resources/images/Tavern.png
+1
+Batman
+This is the second scene

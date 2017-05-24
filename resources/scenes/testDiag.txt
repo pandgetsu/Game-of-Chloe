@@ -1,0 +1,22 @@
+batman.png
+backgroundtest.png
+8
+NPC
+Introduces himself/herself to the main character
+<Player>
+Greets the NPC back
+NPC
+talks about the dangers of the dungeon
+<Player> 
+Laughs confidently and brags about his own skills
+NPC 
+Asks you a question
+<Selection>
+First Choice|First Response
+Second Choice|Second Response
+Third Choice|Third Response
+<Event>
+\033[3mNPC looks at the player gravely and then leaves promptly\033[0m
+<Event>
+You stand still for a short amount of time, shocked by the warning but continues on anyways with his adventure
+
