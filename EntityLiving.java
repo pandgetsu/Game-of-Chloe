@@ -9,7 +9,7 @@ public abstract class EntityLiving extends Entity
 	public final int DEFAULT_DEF = 0;
 
 	//Default Step Speed of Living Entities
-	public final float DEFAULT_STEP = 11.5f;
+	public final float DEFAULT_STEP = 1.5f;
 
 	//Default Dimensions of Living Entities
 	public static final int DEFAULT_CREATURE_WIDTH = 32;
@@ -181,8 +181,6 @@ public abstract class EntityLiving extends Entity
 			}
 		}
 	}
-
-
 
 	protected boolean onBadGround(int x, int y)
 	{
