@@ -42,12 +42,14 @@ public class Assets
     
     public static BufferedImage fireBall;
     
+    public static BufferedImage shield;
+    
     /**
      * The init() method is called to being the loading of the sprites into its specific variable.
      */
     public static void init()
     {
-        SpriteSheet sheet = new SpriteSheet(ImageLoader.loadImage("/textures/spriteSheet64.png")); //A SpriteSheet object is created to create easier access for cropping.
+        SpriteSheet sheet = new SpriteSheet(ImageLoader.loadImage("/resources/textures/spriteSheet64.png")); //A SpriteSheet object is created to create easier access for cropping.
 
         //mainCharacter = sheet.cropImage(0, 0, WIDTH, HEIGHT);
         
@@ -106,18 +108,19 @@ public class Assets
 
         //flashlight = ImageLoader.loadImage("/textures/flashlight150.png");
         //flashlight image to black out the entire map except for a 150p circle centered at the player
-        flashlight = ImageLoader.loadImage("/textures/flashlight150_alpha.png");
+        flashlight = ImageLoader.loadImage("/resources/textures/flashlight150_alpha.png");
         
         doorKey = sheet.cropImage(WIDTH * 2, HEIGHT * 2, WIDTH, HEIGHT);
         
         //simple ui to display controls of game
-        controlsWASD = ImageLoader.loadImage("/textures/tile_WASD.png");
+        controlsWASD = ImageLoader.loadImage("/resources/textures/tile_WASD.png");
         
         //screen render for when the player dies
-        diedState = ImageLoader.loadImage("/textures/gameLost.png");
+        diedState = ImageLoader.loadImage("/resources/textures/gameLost.png");
         
         //tavern background for MenuGUI
-        tavern = ImageLoader.loadImage("/images/Tavern.png");
+        tavern = ImageLoader.loadImage("/resources/images/Tavern.png");
+       
         
         fireBall = sheet.cropImage(0, HEIGHT * 12, WIDTH, HEIGHT);
     }

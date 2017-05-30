@@ -1,98 +1,218 @@
 import java.awt.Graphics;
 import java.awt.image.BufferedImage;
-
+import java.util.*;
 public class EntityBadGuy extends EntityLiving
 {
 
-	private final int ANIMATION_SPEED = 300;
+    private final int ANIMATION_SPEED = 300;
+    private final int PROJECTILE_INTERVAL = 300;                    //Time until projectiles fire again
+    private final int PROJECTILE_ANGLE = 15;                        //How many projectiles fire 360/PROJECTILE_ANGLE
+    private Animation standing;
+    private int projectileTime;
+    private int direction;
+    public EntityBadGuy(Handler handler, float x, float y) 
+    {
+        super(handler, x, y, Tile.TILE_WIDTH, Tile.TILE_HEIGHT);
+        // TODO Auto-generated constructor stub
+      
 
-	private Animation standing;
+        standing = new Animation(ANIMATION_SPEED, Assets.badGuy_standing);
+        projectileTime = PROJECTILE_INTERVAL;
+        chloe = new ArrayList<Projectile>();
+        moveX = (float)-.5;
+        moveY = (float)1;
+    }
+    
+    public String getEntitySignature()
+    {
+        return "mob";
+    }
 
-	public EntityBadGuy(Handler handler, float x, float y) 
-	{
-		super(handler, x, y, Tile.TILE_WIDTH, Tile.TILE_HEIGHT);
-		// TODO Auto-generated constructor stub
+    public void tick()
+    {
+        standing.tick();
+        //checkSurrounding();
+        move();
+        System.out.println(myHandler.getInstance().getEntityHandler().getEntityList().size());
+        System.out.println(chloe.size());
+         if(projectileTime <= 100)
+         {
+            for(int x = 0; x < 360; x += PROJECTILE_ANGLE)
+                shoot(x);
+            projectileTime = PROJECTILE_INTERVAL;
+        }
+        for(int x = 0; x < chloe.size(); x++)
+        {
+            if(chloe.get(x).checkBounds() && !chloe.get(x).checkPlayer())
+                chloe.get(x).tick();
+            else
+            {
+                chloe.remove(x);
+                x--;
+            }
+        }
+        projectileTime--;
+        
+        //shoot();
+//         
+//         for(Entity e : myHandler.getInstance().getEntityHandler().getEntityList())
+//         {
+//             if(e.getEntitySignature().equals("Projectile"))
+//             {
+//                 e.tick();
+//             }
+//         }
+    }
+    
+    public void changeX()
+    {
+        //if move right
+        if(moveX > 0)
+        {
+            int tempX = (int) (myX + moveX + boundingBox.x + boundingBox.width) / Tile.TILE_WIDTH;
 
-		standing = new Animation(ANIMATION_SPEED, Assets.badGuy_standing);
-	}
-	
-	public String getEntitySignature()
-	{
-		return "mob";
-	}
+            if(!collisionWithTile(tempX, (int) (myY + boundingBox.y) / Tile.TILE_HEIGHT) && !collisionWithTile(tempX, (int) (myY + boundingBox.y + boundingBox.height) / Tile.TILE_HEIGHT))
+            {
+                myX += moveX;
+            }else
+            {
+                moveX *= -1;//myX *= -1;// tempX * Tile.TILE_WIDTH - boundingBox.x - boundingBox.width - 1;
+            }
+        }else if(moveX < 0)
+        {
+            int tempX = (int) (myX + moveX + boundingBox.x) / Tile.TILE_WIDTH;
 
-	public void tick()
-	{
-		standing.tick();
-		checkSurrounding();
-		move();
-	}
-	
-	public void checkSurrounding()
-	{
-		double differenceOfX = 0;
-		double differenceOfY = 0;
-		
-		moveX = 0;
-		moveY = 0;
-
-		//int entityListLastIndex = myHandler.getInstance().getEntityHandler().getEntityList().size() - 1;
+            if(!collisionWithTile(tempX, (int) (myY + boundingBox.y) / Tile.TILE_HEIGHT) && !collisionWithTile(tempX, (int) (myY + boundingBox.y + boundingBox.height) / Tile.TILE_HEIGHT))
+            {
+                myX += moveX;
+            }else
+            {
+                moveX *= -1;//myX *= -1;//tempX * Tile.TILE_WIDTH + Tile.TILE_WIDTH - boundingBox.x;
+            }
+        }
+    }
 
 
-		try
-		{
-			differenceOfX = myHandler.getInstance().getEntityHandler().getMainCharacter().getMyX() - myX;
-			differenceOfY = myHandler.getInstance().getEntityHandler().getMainCharacter().getMyY() - myY;
-		}catch(NullPointerException e)
-		{
-			e.printStackTrace();
-		}
+    public void changeY()
+    {
+        if(moveY < 0)
+        {
+            int tempY = (int) (myY + moveY + boundingBox.y) / Tile.TILE_HEIGHT;
 
-		double distance = Math.sqrt(Math.pow(differenceOfX, 2)+ Math.pow(differenceOfY, 2)) / 32;
-		//double distance2 = Point2D.distance(myHandler.getInstance().getEntityHandler().getEntityList().get(2).getMyX(), myHandler.getInstance().getEntityHandler().getEntityList().get(2).getMyY(), myX, myY) / 32;
+            if(!collisionWithTile((int) (myX + boundingBox.x) / Tile.TILE_WIDTH, tempY) && !collisionWithTile((int) (myX + boundingBox.x + boundingBox.width) / Tile.TILE_WIDTH, tempY))
+            {
+                myY += moveY;
+            }else
+            {
+                moveY *= -1;// tempY * Tile.TILE_HEIGHT + Tile.TILE_HEIGHT - boundingBox.y;
+            }
+        }else if(moveY > 0)
+        {
+            int tempY = (int) (myY + moveY + boundingBox.y + boundingBox.height) / Tile.TILE_HEIGHT;
+
+            if(!collisionWithTile((int) (myX + boundingBox.x) / Tile.TILE_WIDTH, tempY) && !collisionWithTile((int) (myX + boundingBox.x + boundingBox.width) / Tile.TILE_WIDTH, tempY))
+            {
+                myY += moveY;
+            }else
+            {
+                moveY *= -1;//myY *= -1;// tempY * Tile.TILE_HEIGHT - boundingBox.y - boundingBox.width - 1;
+            }
+        }
+    }
+    
+   public void shoot(int direction)
+    {
+        
+        chloe.add(new Projectile(this, myHandler, myX, myY, myWidth, myHeight, direction * -1, "mob"));
+        //myHandler.getInstance().getEntityHandler().addEntity(chloe);
+
+    }
+    
+    public int calculatePlayerAngle()
+    {
+        int x = 0;
+        int y = 0;
+        x = (int)myHandler.getInstance().getEntityHandler().getMainCharacter().getMyX();
+        y = (int)myHandler.getInstance().getEntityHandler().getMainCharacter().getMyY();
+        x -= myX;
+        y -= myY;
+        
+        return (int)Math.atan((double) y/x);
+    }
+    
+    public void checkSurrounding()
+    {
+        double differenceOfX = 0;
+        double differenceOfY = 0;
+        
+        moveX = 0;
+        moveY = 0;
+
+        //int entityListLastIndex = myHandler.getInstance().getEntityHandler().getEntityList().size() - 1;
 
 
-		if(distance <= 5)
-		{
-			if(myX < myHandler.getInstance().getEntityHandler().getMainCharacter().getMyX() - 32)
-			{
-				moveX++;
-			}else if(myX > myHandler.getInstance().getEntityHandler().getMainCharacter().getMyX() + 32)
-			{
-				moveX--;
-			}
+        try
+        {
+            differenceOfX = myHandler.getInstance().getEntityHandler().getMainCharacter().getMyX() - myX;
+            differenceOfY = myHandler.getInstance().getEntityHandler().getMainCharacter().getMyY() - myY;
+        }catch(NullPointerException e)
+        {
+            e.printStackTrace();
+        }
 
-			if(myY < myHandler.getInstance().getEntityHandler().getMainCharacter().getMyY() - 32)
-			{
-				moveY++;
-			}else if(myY > myHandler.getInstance().getEntityHandler().getMainCharacter().getMyY() + 32)
-			{
-				moveY--;
-			}
-		}
-		
-		if(distance <= 1.5)
-		{
-			attack(myHandler.getInstance().getEntityHandler().getMainCharacter());
-		}
-	}
+        double distance = Math.sqrt(Math.pow(differenceOfX, 2)+ Math.pow(differenceOfY, 2)) / 32;
+        //double distance2 = Point2D.distance(myHandler.getInstance().getEntityHandler().getEntityList().get(2).getMyX(), myHandler.getInstance().getEntityHandler().getEntityList().get(2).getMyY(), myX, myY) / 32;
 
-	public void getAction()
-	{
-		getDamaged();
-	}
 
-	public void render(Graphics g)
-	{
-		if(getStat_HP() > 0)
-		{
-			g.drawImage(getCurrentAnimation(), (int) getMyX(), (int) getMyY(), getMyWidth(), getMyHeight(), null);
-		}
-	}
+        if(distance <= 20)
+        {
+            if(myX < myHandler.getInstance().getEntityHandler().getMainCharacter().getMyX() - 32)
+            {
+                moveX++;
+            }else if(myX > myHandler.getInstance().getEntityHandler().getMainCharacter().getMyX() + 32)
+            {
+                moveX--;
+            }
 
-	private BufferedImage getCurrentAnimation()
-	{
-		return standing.getCurrentSprite();
-	}
+            if(myY < myHandler.getInstance().getEntityHandler().getMainCharacter().getMyY() - 32)
+            {
+                moveY++;
+            }else if(myY > myHandler.getInstance().getEntityHandler().getMainCharacter().getMyY() + 32)
+            {
+                moveY--;
+            }
+        }
+        
+        if(distance <= 1.5)
+        {
+            attack(myHandler.getInstance().getEntityHandler().getMainCharacter());
+        }
+    }
+    
+
+    public void getAction()
+    {
+        getDamaged();
+        //System.out.println("ow");
+    }
+
+    public void render(Graphics g)
+    {
+        for(Projectile p : chloe)
+        {
+            p.render(g);
+        }
+//         chloe.render(g);
+        if(getStat_HP() > 0)
+        {
+            g.drawImage(getCurrentAnimation(), (int) getMyX(), (int) getMyY(), getMyWidth(), getMyHeight(), null);
+            
+        }
+    }
+
+    private BufferedImage getCurrentAnimation()
+    {
+        return standing.getCurrentSprite();
+    }
 
 }
