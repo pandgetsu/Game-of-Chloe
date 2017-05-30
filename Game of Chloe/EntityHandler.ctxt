@@ -1,0 +1,24 @@
+#BlueJ class context
+comment0.params=handler\ player
+comment0.target=EntityHandler(Handler,\ Player)
+comment1.params=
+comment1.target=boolean\ checkAliveMobs()
+comment10.params=mainCharacter
+comment10.target=void\ setMainCharacter(Player)
+comment2.params=
+comment2.target=void\ tick()
+comment3.params=g
+comment3.target=void\ render(java.awt.Graphics)
+comment4.params=someEntity
+comment4.target=void\ addEntity(Entity)
+comment5.params=
+comment5.target=java.util.ArrayList\ getEntityList()
+comment6.params=entityList
+comment6.target=void\ setEntityList(java.util.ArrayList)
+comment7.params=
+comment7.target=Handler\ getMyHandler()
+comment8.params=myHandler
+comment8.target=void\ setMyHandler(Handler)
+comment9.params=
+comment9.target=Player\ getMainCharacter()
+numComments=11

@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.params=title\ handler\ parent
+comment0.target=DungeonGUI(java.lang.String,\ Handler,\ MasterGUI)
+comment1.params=
+comment1.target=void\ initComponents()
+comment2.params=
+comment2.target=void\ tick()
+comment3.params=
+comment3.target=java.awt.Canvas\ getCanvas()
+comment4.params=
+comment4.target=javax.swing.JFrame\ getFrame()
+comment5.params=
+comment5.target=void\ setUpButtons()
+comment6.params=e
+comment6.target=void\ actionPerformed(java.awt.event.ActionEvent)
+comment7.params=e
+comment7.target=void\ actionPerformed(java.awt.event.ActionEvent)
+numComments=8

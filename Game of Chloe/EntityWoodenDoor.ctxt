@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=handler\ x\ y
+comment0.target=EntityWoodenDoor(Handler,\ float,\ float)
+comment1.params=
+comment1.target=void\ tick()
+comment2.params=
+comment2.target=boolean\ isAlive()
+comment3.params=
+comment3.target=void\ getAction()
+comment4.params=g
+comment4.target=void\ render(java.awt.Graphics)
+comment5.params=
+comment5.target=java.lang.String\ getEntitySignature()
+numComments=6

@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=parent
+comment0.target=MenuGUI(MasterGUI)
+comment1.params=g
+comment1.target=void\ paintComponent(java.awt.Graphics)
+comment2.params=
+comment2.target=void\ initGUI()
+numComments=3

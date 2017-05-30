@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.params=handler
+comment0.target=DiedState(Handler)
+comment1.params=
+comment1.target=void\ tick()
+comment2.params=g
+comment2.target=void\ render(java.awt.Graphics)
+comment2.text=\r\n\ The\ render()\ method\ for\ the\ DiedState\ class\ is\ unlike\ any\ other\ render\ method.\ It\ initially\ renders\ the\ image\ that\ indicates\ to\ the\ user\r\n\ that\ the\ player\ has\ died.\ Then\ a\ timer\ is\ set\ for\ 5000\ milliseconds(5\ seconds)\ and\ at\ the\ conclusion\ of\ those\ 5000\ milliseconds,\ the\ game\r\n\ is\ returned\ to\ its\ initial\ state.\r\n
+comment3.params=e
+comment3.target=void\ actionPerformed(java.awt.event.ActionEvent)
+numComments=4

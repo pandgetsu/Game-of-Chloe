@@ -1,0 +1,4 @@
+#BlueJ class context
+comment0.params=handler\ x\ y\ width\ height
+comment0.target=EntityNonLiving(Handler,\ float,\ float,\ int,\ int)
+numComments=1

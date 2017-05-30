@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.params=title\ width\ height\ handler
+comment0.target=DungeonGUIOLD(java.lang.String,\ int,\ int,\ Handler)
+comment1.params=
+comment1.target=void\ initGUI()
+comment2.params=someBool
+comment2.target=void\ setVisible(boolean)
+comment3.params=
+comment3.target=void\ tick()
+comment4.params=
+comment4.target=java.awt.Canvas\ getCanvas()
+comment5.params=
+comment5.target=javax.swing.JFrame\ getFrame()
+comment6.params=arg0
+comment6.target=void\ actionPerformed(java.awt.event.ActionEvent)
+numComments=7

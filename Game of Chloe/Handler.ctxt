@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.params=game
+comment0.target=Handler(DungeonGame)
+comment1.params=
+comment1.target=Keyboard\ getKeyboard()
+comment2.params=gui
+comment2.target=void\ addGUI(DungeonGUI)
+comment3.params=
+comment3.target=DungeonGUI\ getGUI()
+comment4.params=
+comment4.target=int\ getWidth()
+comment5.params=
+comment5.target=int\ getHeight()
+comment6.params=
+comment6.target=DungeonGame\ getGame()
+comment7.params=game
+comment7.target=void\ setGame(DungeonGame)
+comment8.params=
+comment8.target=DungeonInstance\ getInstance()
+comment9.params=instance
+comment9.target=void\ setInstance(DungeonInstance)
+numComments=10

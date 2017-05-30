@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=handler\ x\ y
+comment0.target=EntityGirl(Handler,\ float,\ float)
+comment1.params=
+comment1.target=void\ tick()
+comment2.params=g
+comment2.target=void\ render(java.awt.Graphics)
+comment3.params=
+comment3.target=java.lang.String\ getEntitySignature()
+comment4.params=
+comment4.target=boolean\ isAlive()
+comment5.params=
+comment5.target=void\ getAction()
+numComments=6

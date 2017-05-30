@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.params=aniSpeed\ spriteFrames
+comment0.target=Animation(int,\ java.awt.image.BufferedImage[])
+comment1.params=
+comment1.target=void\ tick()
+comment1.text=\n\ The\ tick()\ method\ for\ the\ Animation\ class\ will\ cycle\ through\ the\ indexes\ of\ the\ sprites\ BufferedImage[]\ accordingly\ with\ the\ animation\ speed\n\ passed\ to\ the\ constructor.\n
+comment2.params=
+comment2.target=java.awt.image.BufferedImage\ getCurrentSprite()
+numComments=3
