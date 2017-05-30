@@ -5,8 +5,10 @@ public class EntityBadGuy extends EntityLiving
 {
 
     private final int ANIMATION_SPEED = 300;
-    private List<Projectile> chloe = new ArrayList<Projectile>();
+    private final int PROJECTILE_INTERVAL = 300;                    //Time until projectiles fire again
+    private final int PROJECTILE_ANGLE = 15;                        //How many projectiles fire 360/PROJECTILE_ANGLE
     private Animation standing;
+    private int projectileTime;
     public EntityBadGuy(Handler handler, float x, float y) 
     {
         super(handler, x, y, Tile.TILE_WIDTH, Tile.TILE_HEIGHT);
@@ -14,6 +16,8 @@ public class EntityBadGuy extends EntityLiving
       
 
         standing = new Animation(ANIMATION_SPEED, Assets.badGuy_standing);
+        projectileTime = PROJECTILE_INTERVAL;
+        chloe = new ArrayList<Projectile>();
     }
     
     public String getEntitySignature()
@@ -27,17 +31,25 @@ public class EntityBadGuy extends EntityLiving
         checkSurrounding();
         move();
         System.out.println(myHandler.getInstance().getEntityHandler().getEntityList().size());
-//         if(chloe.size() < 5)
-//         {
-            shoot(0);
-            shoot(90);
-            shoot(180);
-            shoot(270);
-//         }
-        for(Projectile p: chloe)
-        {
-            p.tick();
+        System.out.println(chloe.size());
+         if(projectileTime <= 100)
+         {
+            for(int x = 0; x < 360; x += PROJECTILE_ANGLE)
+                shoot(x);
+            projectileTime = PROJECTILE_INTERVAL;
         }
+        for(int x = 0; x < chloe.size(); x++)
+        {
+            if(chloe.get(x).checkBounds() && !chloe.get(x).checkPlayer())
+                chloe.get(x).tick();
+            else
+            {
+                chloe.remove(x);
+                x--;
+            }
+        }
+        projectileTime--;
+        
         //shoot();
 //         
 //         for(Entity e : myHandler.getInstance().getEntityHandler().getEntityList())
@@ -49,10 +61,10 @@ public class EntityBadGuy extends EntityLiving
 //         }
     }
     
-    public void shoot(int direction)
+   public void shoot(int direction)
     {
         
-        chloe.add(new Projectile(myHandler, myX, myY, myWidth, myHeight, direction * -1));
+        chloe.add(new Projectile(this, myHandler, myX, myY, myWidth, myHeight, direction * -1, "mob"));
         //myHandler.getInstance().getEntityHandler().addEntity(chloe);
 
     }
@@ -121,6 +133,7 @@ public class EntityBadGuy extends EntityLiving
     public void getAction()
     {
         getDamaged();
+        //System.out.println("ow");
     }
 
     public void render(Graphics g)

@@ -15,6 +15,9 @@ public class Keyboard implements KeyListener
 	
 	public boolean resetWorld;
 	
+	public boolean slowDown;
+	public boolean shoot;
+	
 	private Handler myHandler;
 	
 	public Keyboard()
@@ -30,6 +33,8 @@ public class Keyboard implements KeyListener
 		moveRight = keys[KeyEvent.VK_D];
 		
 		interact = keys[KeyEvent.VK_SPACE];
+		//slowDown = keys[KeyEvent.VK_SHIFT];
+		shoot = keys[KeyEvent.VK_J];
 		
 		resetWorld = keys[KeyEvent.VK_NUMPAD0];
 		//InputMap test = ((JComponent)(myHandler.getGUI())).getInputMap();
