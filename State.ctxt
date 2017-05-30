@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=state
+comment0.target=void\ setState(State)
+comment1.params=
+comment1.target=State\ getState()
+comment2.params=handler
+comment2.target=State(Handler)
+comment3.params=
+comment3.target=void\ tick()
+comment4.params=g
+comment4.target=void\ render(java.awt.Graphics)
+numComments=5

@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=
+comment0.target=MasterGUI()
+comment1.params=e
+comment1.target=void\ actionPerformed(java.awt.event.ActionEvent)
+comment2.params=newPanel
+comment2.target=void\ swapPanels(javax.swing.JPanel)
+comment3.params=
+comment3.target=void\ backToMenu()
+comment4.params=fileName
+comment4.target=void\ goToVisualNovel(java.lang.String)
+numComments=5

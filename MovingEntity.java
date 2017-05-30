@@ -27,7 +27,7 @@ public class MovingEntity extends EntityNonLiving
     public MovingEntity(Handler handler, float x, float y, int width, int height, int direction)
     {
         super(handler, x, y, width, height);
-        mySpd = 10.5f;
+        mySpd = 3.5f;
         myDirection = direction;
     }
     

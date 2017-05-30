@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.params=sheet
+comment0.target=SpriteSheet(java.awt.image.BufferedImage)
+comment1.params=x\ y\ width\ height
+comment1.target=java.awt.image.BufferedImage\ cropImage(int,\ int,\ int,\ int)
+numComments=2

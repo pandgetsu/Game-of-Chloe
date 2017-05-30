@@ -1,0 +1,24 @@
+#BlueJ class context
+comment0.params=
+comment0.target=boolean\ hasItem()
+comment1.params=
+comment1.target=boolean\ isHasKey()
+comment10.params=
+comment10.target=java.awt.image.BufferedImage\ getCurrentAnimation()
+comment2.params=hasKey
+comment2.target=void\ setHasKey(boolean)
+comment3.params=handler\ x\ y
+comment3.target=Player(Handler,\ float,\ float)
+comment4.params=
+comment4.target=java.lang.String\ getEntitySignature()
+comment5.params=
+comment5.target=void\ tick()
+comment6.params=
+comment6.target=void\ shoot()
+comment7.params=
+comment7.target=void\ getInput()
+comment8.params=
+comment8.target=void\ getAction()
+comment9.params=g
+comment9.target=void\ render(java.awt.Graphics)
+numComments=11

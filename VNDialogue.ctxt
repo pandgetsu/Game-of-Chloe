@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.params=
+comment0.target=VNDialogue()
+comment0.text=\n\ Default\ Constructor\ with\ no\ arguments.\ Sets\ both\ charName\ and\ dialogue\ as\ empty\ strings\n
+comment1.params=cName\ diag
+comment1.target=VNDialogue(java.lang.String,\ java.lang.String)
+comment1.text=\n\ Constructore\ which\ includes\ arguments\ to\ set\ cName\ and\ dialogue\n
+comment2.params=cName
+comment2.target=void\ setName(java.lang.String)
+comment2.text=\n\ Sets\ the\ content\ of\ the\ String\ charName\n
+comment3.params=diag
+comment3.target=void\ setDiag(java.lang.String)
+comment3.text=\n\ Sets\ the\ content\ of\ the\ String\ dialogue\n
+comment4.params=
+comment4.target=java.lang.String\ getName()
+comment4.text=\n\ Returns\ the\ content\ of\ the\ String\ charName\n
+comment5.params=
+comment5.target=java.lang.String\ getDiag()
+comment5.text=\n\ Returns\ the\ content\ of\ the\ String\ dialogue\n
+comment6.params=
+comment6.target=boolean\ isSelection()
+comment6.text=\n\ Indicates\ that\ the\ VNDialogue\ is\ NOT\ a\ selection\ dialogue\ scenario\n\ \n\ See\ subclass\ VNSelection\ for\ a\ selection\ dialogue\ scenario\n
+numComments=7
