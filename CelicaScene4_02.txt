@@ -1,0 +1,11 @@
+Celica
+Tavern
+3
+<Event>
+I find Celica reading at a table in the tavern.
+<Event>
+I sit down across from her.
+<Selection>
+How's the book?|Great! It's...|2
+Weather's good huh?|It is.|0
+...|...|-2

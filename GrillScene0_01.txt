@@ -1,0 +1,17 @@
+Grill
+Dungeon
+7
+<Event>
+It's a grill
+<Player>
+H-hello?
+<Grill>
+Tsszzzzt
+<Player>
+Right.
+<Event>
+The grill goes back to the tavern.
+<Player>
+Right.
+<Event>
+I go back to the tavern.

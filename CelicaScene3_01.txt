@@ -1,0 +1,9 @@
+Blank
+Tavern
+3
+<Event>
+I decide to go talk to Celica
+<Event>
+I find her in the tavern
+<Next Event>
+CelicaScene3_02

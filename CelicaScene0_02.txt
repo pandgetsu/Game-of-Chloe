@@ -1,0 +1,21 @@
+Celica
+Dungeon
+9
+<???>
+Looks like it's time for me to go.
+<Event>
+She closes the book she's reading and stands up.
+<Player>
+Wait who are you, and did you already take the treasure?
+<Celica>
+My name is Celica and yes I did take it.
+<Celica>
+Is that a problem?
+<Player>
+N-no.
+<Celica>
+Good.
+<Event>
+She leaves.
+<Player>
+...

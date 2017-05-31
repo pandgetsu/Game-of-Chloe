@@ -1,0 +1,9 @@
+Blank
+Tavern
+3
+<Event>
+I decide to check up on Illya.
+<Event>
+I head over to the dungeon to find her.
+<Next Event>
+IllyaScene2_02

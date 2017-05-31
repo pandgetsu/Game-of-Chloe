@@ -1,0 +1,17 @@
+Blank
+Dungeon
+7
+<Event>
+Hm. Strange.
+<Event>
+I'm in the dungeon but I don't seem to see any monsters.
+<Event>
+I hear the wail of a monster in the distance.
+<Event>
+I decide to go towards it.
+<Event>
+When I reach the source of the sound.
+<Event>
+All I see are piles of bodies.
+<Next Event>
+IllyaScene0_02

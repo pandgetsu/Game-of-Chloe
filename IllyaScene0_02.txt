@@ -1,0 +1,29 @@
+Illya
+Dungeon
+13
+<Event>
+I see a girl standing among the corpses.
+<Player>
+D-did you do all this?
+<Event>
+She turns to me and stares.
+<???>
+...
+<Event>
+She nods.
+<Event>
+She doesn't seem like a bad person.
+<Player>
+What's your name?
+<Illya>
+Illya.
+<Player>
+I see.
+<Illya>
+Good...
+<Illya>
+Bye...
+<Event>
+She leaves.
+<Event>
+Hmmmm. I go back to the tavern.

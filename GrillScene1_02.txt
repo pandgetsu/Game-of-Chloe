@@ -1,0 +1,11 @@
+Grill
+Tavern
+4
+<Player>
+H-hello.
+<Grill>
+Tssszzzt.
+<Player>
+Right.
+<Event>
+I stand there talking(?) to the grill.

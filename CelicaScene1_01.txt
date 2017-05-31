@@ -1,0 +1,9 @@
+Blank
+Tavern
+3
+<Event>
+I think I'll find Celica.
+<Event>
+I search for her in the tavern.
+<Next Event>
+CelicaScene2_02

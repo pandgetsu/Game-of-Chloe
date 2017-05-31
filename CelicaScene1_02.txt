@@ -1,0 +1,23 @@
+Celica
+Tavern
+num
+<Event>
+I find Celica sitting at a table reading a book.
+<Player>
+H-hello.
+<Event>
+She looks up from the book and tilts her head.
+<Celica>
+Hello again.
+<Event>
+She goes back to reading.
+<Player>
+What's that book about.
+<Celica>
+Well...
+<Event>
+I talk with her about books until night.
+<Event>
+I leave satisfied with our conversation.
+
+

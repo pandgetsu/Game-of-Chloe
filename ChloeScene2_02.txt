@@ -1,0 +1,9 @@
+Chloe
+Dungeon
+2
+<Event>
+Chloe fires an arrow at me
+<Selection>
+Dodge|Good! You're learning! |2
+Cut the arrow in half|Aw, it still glanced your shoulder.|0
+Do nothing.|Are you an idiot? Let's stop for today since you're injured.|-2

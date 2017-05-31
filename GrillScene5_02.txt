@@ -1,0 +1,11 @@
+Grill
+Tavern
+4
+<Event>
+I find the... Gril.
+<Event>
+We have a barbecue.
+<Event>
+It's fun.
+<Event>
+The End. <Good End 1>

@@ -1,0 +1,11 @@
+Blank
+Tavern
+4
+<Event>
+I decide to go see Celica.
+<Event>
+I head over to her in the tavern.
+<Event>
+I have a good feeling about today.
+<Next Event>
+CelicaScene5_02

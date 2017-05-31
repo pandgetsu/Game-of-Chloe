@@ -1,0 +1,19 @@
+Blank
+Dungeon
+8
+<Event>
+I see the figure again.
+<Event>
+As I approach I see a blade coming at me out of the corner of my eye.
+<Event>
+I roll out of the way and slam against the dungeon wall.
+<Event>
+I look up to see an orc preparing to strike me down once more.
+<???>
+Useless.
+<Event>
+Once more the same arrow saves my life.
+<???>
+If you're an adventurer, you should at least be able to handle this.
+<Next Event>
+ChloeScene0.5_02

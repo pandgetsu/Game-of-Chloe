@@ -1,0 +1,25 @@
+Chloe
+Dungeon
+11
+<Chloe>
+Oh so you came.
+<Chloe>
+Alright I guess I'll teach you to fight.
+<Event>
+Chloe goes over the basics with you.
+<Chloe>
+Alright let's call it a day.
+<Chloe>
+You're still far from my level, but you're coming along nicely.
+<Player>
+Thank you very much.
+<Player>
+Is it alright if I come back again?
+<Chloe>
+Hahaha, sure if you'd like.
+<Player>
+Thank you!
+<Chloe>
+Hahaha, you're an interesting guy.
+<Event>
+I go back to the tavern.

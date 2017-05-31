@@ -1,0 +1,13 @@
+Illya
+Dungeon
+4
+<Event>
+I find Illya amongst piles of bodies.
+<Event>
+She turns to me.
+<Event>
+She seems to be expecting something.
+<Selection>
+Do you want to go eat?|Yes...|2
+Weather's good huh?|...|0
+...|...|-2

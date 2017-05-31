@@ -1,0 +1,35 @@
+Illya
+Dungeon
+16
+<Event>
+I find her amongst piles of bodies.
+<Player>
+Hey.
+<Event>
+She turns to look at me.
+<Event>
+She stares at me.
+<Player>
+You know I keep coming down here to check on you, but...
+<Player>
+I was thinking. It might be easier to check on you if we lived together.
+<Illya>
+...
+<Player>
+I guess not huh?
+<Player>
+All right I'll see you.
+<Event>
+I turn to leave but feel a tug on my sleeve.
+<Event>
+I turn to see Illya pulling on my sleeve
+<Illya>
+ok...
+<Player>
+All right then. Let's go home Illya.
+<Illya>
+Okay!
+<Event>
+Thus began my life with Illya.
+<Event>
+The End. <Good End 3>

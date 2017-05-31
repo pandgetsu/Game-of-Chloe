@@ -1,0 +1,11 @@
+Grill
+Tavern
+3
+<Event>
+I find the... Grill?
+<Selection>
+So cooking is fun right?|Tsssszzzzt.|2
+Weather's nice right?|Tsssszzzzzt.|0
+....|Tsssszzzzt.|-2
+<Event>
+...

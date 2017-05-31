@@ -1,0 +1,25 @@
+Illya
+Dungeon
+11
+<Event>
+I find her among another pile of bodies.
+<Player>
+H-hey.
+<Event>
+She turns to look at me
+<Player>
+You doing alright?
+<Event>
+She nods.
+<Event>
+I hear her stomach rumble.
+<Event>
+She blushes slightly.
+<Player>
+Are you hungry?
+<Event>
+She nods.
+<Player>
+Let's go.
+<Event>
+I take her to the tavern to eat.

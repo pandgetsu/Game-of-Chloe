@@ -1,0 +1,9 @@
+Blank
+Tavern
+3
+<Event>
+I guess I'll talk to the... Grill?
+<Event>
+I go to find the... Grill?
+<Next Event>
+GrillScene2_02

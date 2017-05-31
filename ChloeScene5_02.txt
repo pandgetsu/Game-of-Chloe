@@ -1,0 +1,43 @@
+Chloe
+Dungeon
+20
+<Event>
+I dodge Chloe's arrows and manage to get in range.
+<Chloe>
+Wha...
+<Event>
+I grab her right hand to keep her from drawing her bow and press the tip of my sword to her throat
+<Chloe>
+Good job.
+<Event>
+Chloe dissapears.
+<Chloe>
+You're good enough to manage the dungeons on your own I think.
+<Event>
+I spin around to find Chloe standing behind me.
+<Player>
+Wha...
+<Chloe>
+But not as good as me. 
+<Event>
+She smiles rather smugly.
+<Player>
+I really thought I had you there.
+<Chloe>
+There's still a lot left for you to learn.
+<Chloe>
+But you can learn all those things on our adventure.
+<Player>
+Hm?
+<Chloe>
+Well, you're an adventurer right?
+<Player>
+Yes?
+<Chloe>
+Then let's go on an adventure!
+<Event>
+She grabs my hand and starts to lead me deeper into the dungeon.
+<Event>
+This is how my adventuring days with Chloe began.
+<Event>
+The End. <True End>

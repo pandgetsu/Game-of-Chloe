@@ -1,0 +1,25 @@
+Celica
+Tavern
+11
+<Event>
+I sit across from Celica.
+<Celica>
+Do you like treasure hunting?
+<Player>
+Wha... Yeah I guess?
+<Celica>
+Apparently there's treasure on the second level of the dungeon.
+<Player>
+Is there now? What's the treasure?
+<Celica>
+An original copy of a magic tome.
+<Player>
+Oh. Interesting.
+<Celica>
+Would you like to join me in recovering it?
+<Player>
+Of course.
+<Event>
+Thus began our treasure hunting days.
+<Event>
+The End. <Good End 2>

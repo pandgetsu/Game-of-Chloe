@@ -1,0 +1,9 @@
+Blank
+Tavern
+3
+<Event>
+I decide to go train with Chloe.
+<Event>
+I head over to the dungeon and find Chloe.
+<Next Scene>
+ChloeScene4_02

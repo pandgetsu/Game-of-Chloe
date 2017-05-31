@@ -1,0 +1,27 @@
+ChloeNoHood
+DungeonBackground
+12
+<Event>
+I look up to see that the figure's hood as fallen off revealing...
+<Event>
+A girl.
+<Event>
+A very pretty girl.
+<Player>
+Ah
+<???>
+Hmm?
+<Player>
+Er... What's your name?
+<Chloe>
+Chloe
+<Player>
+C-could you teach me to fight?
+<Chloe>
+Mmmm, maybe later.
+<Chloe>
+Come find me when you get the chance.
+<Event>
+With that Chloe left.
+<Event>
+I return to the tavern.

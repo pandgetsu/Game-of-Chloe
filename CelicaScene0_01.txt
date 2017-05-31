@@ -1,0 +1,11 @@
+Blank
+Dungeon
+4
+<Event>
+I approach the room where the treasure lies
+<Player>
+It should be just ar...
+<Event>
+Atop the treasure chest sat a girl
+<Next Event>
+CelicaScene0_02

@@ -1,0 +1,11 @@
+Blank
+Tavern
+4
+<Event>
+I guess I'll talk to the... Gril?
+<Event>
+I go to find the... Gril?
+<Event>
+Maybe today will be better.
+<Next Event>
+GrillScene5_02

@@ -1,0 +1,9 @@
+Blank
+Tavern
+3
+<Event>
+I decide to find Chloe and learn how to fight from her.
+<Event>
+I head over to the dungeon to find her.
+<Next Event>
+ChloeScene1_02

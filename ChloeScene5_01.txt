@@ -1,0 +1,11 @@
+Blank
+Tavern
+4
+<Event>
+I decide to go train with Chloe.
+<Event>
+I have a good feeling about today. I think I can win againster her this time.
+<Event>
+I head over to the dungeon to find Chloe
+<Next Event>
+ChloeScene5_02

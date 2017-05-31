@@ -1,0 +1,15 @@
+Blank
+DungeonBackground
+6
+<Event>
+I sensed death approach as the orc swung down its club.
+<Event>
+All was lost.
+<Event>
+Until...
+<Event> 
+An arrow swirling with mana pierced through the orc, blowing it away.
+<Player>
+Wha...
+<Next Event>
+ChloeScene0_02

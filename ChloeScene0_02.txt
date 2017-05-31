@@ -1,0 +1,17 @@
+Blank
+DungeonBackground
+7
+<Event>
+I looked toward the direction the arrow came from and saw a cloaked figure
+<Event>
+As I stared at the figure, the figure started to run off.
+<Player>
+Wait!
+<Event>
+The figure stopped and turned to look at me.
+<Player>
+Who are you?
+<???>
+...
+<Event>
+The figure turned away from me and left.
